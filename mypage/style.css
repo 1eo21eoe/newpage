@@ -1,11 +1,24 @@
+:root {
+  --text-color: #fffffb;
+  --accent-color: #94af76;
+}
 body {
   margin: 0;
-  font-family: "Noto Serif Korean";
+  font-family: "Nanum Gothic Coding", monospace;
+  background-color: #eeeeee;
 }
 
 a {
   text-decoration: none;
-  color: #fffffb;
+  font-style: italic;
+  color: var(--text-color);
+  word-spacing: -8px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
 }
 .navbar {
   display: flex;
@@ -17,7 +30,7 @@ a {
 
 .navbar__logo {
   font-size: 24px;
-  color: #fffffb;
+  color: var(--text-color);
 }
 .navbat__logo i {
   color: #aabb97;
@@ -43,7 +56,7 @@ a {
 
 .navbar__icons {
   list-style: none;
-  color: #fffffb;
+  color: var(--text-color);
   display: flex;
   padding-left: 0;
 }
@@ -57,7 +70,7 @@ a {
   position: absolute;
   right: 32px;
   font-size: 24px;
-  color: #fffffb;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
