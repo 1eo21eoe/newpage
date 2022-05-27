@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Noto Serif Korean";
+}
+
+a {
+  text-decoration: none;
+  color: #fffffb;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #aabb97;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: #fffffb;
+}
+.navbat__logo i {
+  color: #aabb97;
+}
+
+.navbar__menu {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+.navbar__menu a {
+  display: block;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+  background-color: #94af76;
+  border-radius: 10px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: #fffffb;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #fffffb;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu li {
+    text-align: center;
+  }
+
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar__toogleBtn {
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
